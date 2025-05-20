@@ -1,0 +1,16 @@
+print("Welcome to the Big Number Duel!\nMy name is Augustin Rayo and whichever number you think of, I will come up with a bigger one!\nHahaha!")
+while True:
+    choice = input("Your number: ")
+
+    if choice == "rayo's number".lower:
+        print("Hey that's my number! Also whatever you said + 1")
+    else:
+
+        try:
+            choice = int(choice)
+            print(f"You say {choice}?")
+            choice += 1
+            print(f"I say {choice}")
+     
+        except ValueError:
+            print("Whatever you said +1")
